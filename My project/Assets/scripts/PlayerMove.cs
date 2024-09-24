@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PlayerStats player;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        float move = Input.GetAxis("Horizontal");
+        Vector2 movement = new Vector2(move, 0f);
+        transform.position = movement * player.Speed * Time.deltaTime;
     }
 }
