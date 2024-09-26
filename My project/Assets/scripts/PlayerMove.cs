@@ -5,12 +5,13 @@ using UnityEngine.UIElements;
 
 public class PlayerMove : MonoBehaviour
 {
-    public PlayerStats player;
+    [field: SerializeField] public float Speed = 5f;
+ 
 
     private void Update()
     {
         float move = Input.GetAxis("Horizontal");
-        Vector2 movement = new Vector2(move, 0f);
-        transform.position = movement * player.Speed * Time.deltaTime;
+        Vector3 movement = new Vector3(move , 0,0);
+        transform.position += movement * Speed * Time.deltaTime;
     }
 }
