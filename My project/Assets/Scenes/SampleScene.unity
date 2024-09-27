@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281316c6259c0564a8872b1dc32dabce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 0}
+  win: {fileID: 611585044}
   enemyPrefab: {fileID: 8014243691308556505, guid: edc75d0e412e49e49a56e784a024bc4a, type: 3}
   spawnPoint: {fileID: 57769134}
   spawnInterval: 4
@@ -591,7 +591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &209916016
 Transform:
   m_ObjectHideFlags: 0
@@ -1324,7 +1324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281316c6259c0564a8872b1dc32dabce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 0}
+  win: {fileID: 611585044}
   enemyPrefab: {fileID: 8014243691308556505, guid: edc75d0e412e49e49a56e784a024bc4a, type: 3}
   spawnPoint: {fileID: 417311759}
   spawnInterval: 4
@@ -1700,6 +1700,7 @@ GameObject:
   - component: {fileID: 611585041}
   - component: {fileID: 611585042}
   - component: {fileID: 611585043}
+  - component: {fileID: 611585044}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -1751,6 +1752,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1560c0e90afd99e41912e42fd0cc1099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &611585044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611585040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581f72d9f946b514cb0a73231485ed37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinMen: {fileID: 1065784512}
 --- !u!1 &617292881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,7 +1809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281316c6259c0564a8872b1dc32dabce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 0}
+  win: {fileID: 611585044}
   enemyPrefab: {fileID: 8014243691308556505, guid: edc75d0e412e49e49a56e784a024bc4a, type: 3}
   spawnPoint: {fileID: 617292882}
   spawnInterval: 4
@@ -3247,7 +3261,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &1065784516
 RectTransform:
@@ -3447,7 +3461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281316c6259c0564a8872b1dc32dabce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 0}
+  win: {fileID: 611585044}
   enemyPrefab: {fileID: 8014243691308556505, guid: edc75d0e412e49e49a56e784a024bc4a, type: 3}
   spawnPoint: {fileID: 1176742831}
   spawnInterval: 4
@@ -3496,7 +3510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281316c6259c0564a8872b1dc32dabce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 0}
+  win: {fileID: 611585044}
   enemyPrefab: {fileID: 8014243691308556505, guid: edc75d0e412e49e49a56e784a024bc4a, type: 3}
   spawnPoint: {fileID: 1189032388}
   spawnInterval: 4
