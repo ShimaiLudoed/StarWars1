@@ -11,11 +11,11 @@ public class Spawner : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform spawnPoint;
     public float spawnInterval = 3.0f; 
-    public int maxEnemies=1;
+    public int maxEnemies;
 
     private void Start()
     {
-        //maxEnemies=Random.Range(2, 7);
+        maxEnemies=Random.Range(2, 7);
     }
 
     private float timer;

@@ -6,19 +6,14 @@ using UnityEngine;
 public class Win : MonoBehaviour
 {
     public GameObject WinMen;
-    public GameObject[] spawner;
-
-    private void Start()
-    {
-        spawner = GameObject.FindGameObjectsWithTag("Spawn");
-    }
 
     void Update()
     {
-        if (spawner == null)
+        GameObject[] spawner = GameObject.FindGameObjectsWithTag("Spawn");
+        if (spawner.Length==0)
         {
             WinMen.SetActive(true);
-            spawner = GameObject.FindGameObjectsWithTag("Spawn");
         }
+        
     }
 }
