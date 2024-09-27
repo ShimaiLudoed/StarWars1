@@ -165,6 +165,7 @@ MonoBehaviour:
   health: 1
   curHealth: 0
   score: {fileID: 0}
+  player: {fileID: 5076472541414504611, guid: 43805096bf7ccad4eb0d75a1216f805b, type: 3}
 --- !u!68 &8795382096921798709
 EdgeCollider2D:
   m_ObjectHideFlags: 0

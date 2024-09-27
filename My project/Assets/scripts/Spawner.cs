@@ -7,14 +7,15 @@ using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
+    public Win win;
     public GameObject enemyPrefab;
     public Transform spawnPoint;
     public float spawnInterval = 3.0f; 
-    public int maxEnemies ;
+    public int maxEnemies=1;
 
     private void Start()
     {
-        maxEnemies=Random.Range(2, 7);
+        //maxEnemies=Random.Range(2, 7);
     }
 
     private float timer;
@@ -38,6 +39,7 @@ public class Spawner : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            
         }
     }
 }

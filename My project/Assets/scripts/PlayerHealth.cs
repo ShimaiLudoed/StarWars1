@@ -9,6 +9,7 @@ public class PlayerHealth : AHealth
     public GameObject DeathMenu;
     public GameObject GameMenu;
     public TextMeshProUGUI Dscore;
+    
     private void Update()
     {
         if (curHealth <= 0)
@@ -17,6 +18,7 @@ public class PlayerHealth : AHealth
             Die();
             DeathMenu.SetActive(true);
             UpdateScore();
+         
         }
     }
 
@@ -25,3 +27,5 @@ public class PlayerHealth : AHealth
         Dscore.text = "Ваш счёт"+" "+ score.score;
     }
 }
+
+

@@ -10,6 +10,7 @@ public abstract class AHealth : MonoBehaviour
     [SerializeField] private int health;
      public int curHealth;
      public Score score;
+     public PlayerHealth player;
      
 
     private void Start()
@@ -18,6 +19,7 @@ public abstract class AHealth : MonoBehaviour
         if (gameObject.CompareTag("Enemy")) ;
         {
             score = FindObjectOfType<Score>();
+            player = FindObjectOfType<PlayerHealth>();
         }
     }
     
