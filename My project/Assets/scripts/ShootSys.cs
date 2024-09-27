@@ -11,7 +11,7 @@ public class ShootSys : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && gameObject.CompareTag("Player"))
         {
             Shoot();
         }
@@ -24,7 +24,7 @@ public class ShootSys : MonoBehaviour
         GameObject bullet = Instantiate(bulletPref, FirePoint.position, FirePoint.rotation);
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.velocity = (FirePoint.up * bullet.GetComponent<Bullet>().Speed);
+        rb.velocity = (FirePoint.up * bullet.GetComponent<ABullet>().Speed);
        
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    [SerializeField] private float MoveRate = 2f;
+    [SerializeField] private float MoveRate = 4f;
     [SerializeField] private float speed=1f;
     public float curRate;
 
@@ -28,7 +28,7 @@ public class EnemyMove : MonoBehaviour
 
     void Move()
     {
-        Vector3 move = new Vector3(0,1,0);
+        Vector3 move = new Vector3(0,(float)-0.5,0);
         transform.position += move*speed*MoveRate;
 
     }
