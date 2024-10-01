@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
 {
     [field: SerializeField] public float Speed = 5f;
  
+
     private void Update()
     {
         float move = Input.GetAxis("Horizontal");

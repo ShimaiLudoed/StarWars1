@@ -15,7 +15,9 @@ public class ShootSys : MonoBehaviour
         {
             Shoot();
         }
+
     }
+
 
     public void Shoot()
     {
@@ -23,6 +25,6 @@ public class ShootSys : MonoBehaviour
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = (FirePoint.up * bullet.GetComponent<ABullet>().Speed);
-       //перенести
+       
     }
 }

@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-  public void Restartgame()
+  public void restartgame()
   {
     SceneManager.LoadScene("SampleScene");
   }
 }
-//addlistener добавить
