@@ -6,7 +6,7 @@ public class EnemyMove : MonoBehaviour
 {
     [SerializeField] private float MoveRate = 4f;
     [SerializeField] private float speed=1f;
-    public float curRate;
+    private float curRate;
 
     private void Start()
     {

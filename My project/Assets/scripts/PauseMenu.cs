@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject Pause;
+    [SerializeField] private GameObject Pause;
     void Start()
     {
         

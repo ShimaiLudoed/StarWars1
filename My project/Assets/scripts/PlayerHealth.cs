@@ -6,25 +6,21 @@ using UnityEngine;
 using TMPro;
 public class PlayerHealth : AHealth
 {
-    public GameObject DeathMenu;
-    public GameObject GameMenu;
-    public TextMeshProUGUI Dscore;
-    
-    private void Update()
+    public event Action onPlayerDeath;
+    public override void GetDamage(int damage)
     {
+        base.GetDamage(damage);
+
         if (curHealth <= 0)
         {
-            GameMenu.SetActive(false);
             Die();
-            DeathMenu.SetActive(true);
-            UpdateScore();
-         
         }
     }
 
-    void UpdateScore()
+    public override void Die()
     {
-        Dscore.text = "Ваш счёт"+" "+ score.score;
+        onPlayerDeath?.Invoke();
+        base.Die();
     }
 }
 

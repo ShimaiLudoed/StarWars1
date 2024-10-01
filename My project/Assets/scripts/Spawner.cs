@@ -7,11 +7,11 @@ using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
-    public Win win;
-    public GameObject enemyPrefab;
-    public Transform spawnPoint;
-    public float spawnInterval = 3.0f; 
-    public int maxEnemies;
+    [SerializeField] private Win win;
+    [SerializeField] private GameObject enemyPrefab;
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private float spawnInterval = 3.0f; 
+    [SerializeField] private int maxEnemies;
 
     private void Start()
     {
