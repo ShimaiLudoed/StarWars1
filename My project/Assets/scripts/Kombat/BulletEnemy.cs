@@ -27,9 +27,4 @@ public class BulletEnemy : ABullet
             Destroy(gameObject);
         }
     }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        
-    }
 }

@@ -14,6 +14,5 @@ public class Win : MonoBehaviour
         {
             WinMen.SetActive(true);
         }
-        
     }
 }
