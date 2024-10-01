@@ -10,6 +10,7 @@ public class GMHealth : MonoBehaviour
     [SerializeField] private GameObject GameMenu;
     [SerializeField] private TextMeshProUGUI Dscore;
     [SerializeField] private Score score;
+
     private void Start()
     {
         PlayerHealth player = FindAnyObjectByType<PlayerHealth>();
@@ -25,6 +26,6 @@ public class GMHealth : MonoBehaviour
 
     void UpdateScore()
     {
-        Dscore.text = ($"Ваш счёт {score.score}");
+        Dscore.text = ($"пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ {score.score}");
     }
 }

@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
+
 public class PlayerHealth : AHealth
 {
     public event Action onPlayerDeath;
+
     public override void GetDamage(int damage)
     {
         base.GetDamage(damage);
@@ -23,5 +25,3 @@ public class PlayerHealth : AHealth
         base.Die();
     }
 }
-
-

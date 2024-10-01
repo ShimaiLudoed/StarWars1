@@ -8,20 +8,19 @@ using UnityEngine;
 public abstract class AHealth : MonoBehaviour
 {
     [SerializeField] private int health;
-     public int curHealth;
-
-     
-
+    public int curHealth;
+    protected Score score;
+    [SerializeField]protected PlayerHealth player;
     private void Start()
     {
         curHealth = health;
         if (gameObject.CompareTag("Enemy")) ;
         {
-           Score score = FindObjectOfType<Score>();
-           PlayerHealth player = FindObjectOfType<PlayerHealth>();
+             score = FindObjectOfType<Score>();
+             player = FindObjectOfType<PlayerHealth>();
         }
     }
-    
+
     public virtual void GetDamage(int damage)
     {
         curHealth -= damage;
@@ -31,5 +30,5 @@ public abstract class AHealth : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    
+
 }

@@ -12,7 +12,8 @@ public class BulletEnemy : ABullet
             player.GetDamage(damageBull);
             Destroy(gameObject);
         }
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Obstacle")) 
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
         {
             Destroy(gameObject);
         }
@@ -28,8 +29,5 @@ public class BulletEnemy : ABullet
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        
-    }
+    private void OnCollisionExit2D(Collision2D collision) { }
 }

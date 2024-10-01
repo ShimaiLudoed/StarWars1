@@ -11,6 +11,6 @@ public class PlayerBullet : ABullet
             enemy.GetDamage(damageBull);
             Destroy(gameObject);
         }
-        
+
     }
 }

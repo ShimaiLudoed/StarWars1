@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class HealthEnemy : AHealth
 {
-    public event Action onEnemyDeath;
-
     public override void GetDamage(int damage)
     {
         base.GetDamage(damage);
@@ -16,10 +14,23 @@ public class HealthEnemy : AHealth
             Die();
         }
     }
-    public override void Die()
+    
+    private void Update()
     {
-        onEnemyDeath?.Invoke();
-        base.Die();
+        if (curHealth <= 0)
+        {
+            Die();
+        }
+
+        if (player.curHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
+    public override void Die()
+    {
+        base.Die();
+        score.AddScore();
+    }
 }

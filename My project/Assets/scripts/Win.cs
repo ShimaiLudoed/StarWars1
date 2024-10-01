@@ -10,10 +10,10 @@ public class Win : MonoBehaviour
     void Update()
     {
         GameObject[] spawner = GameObject.FindGameObjectsWithTag("Spawn");
-        if (spawner.Length==0)
+        if (spawner.Length == 0)
         {
             WinMen.SetActive(true);
         }
-        
+
     }
 }
