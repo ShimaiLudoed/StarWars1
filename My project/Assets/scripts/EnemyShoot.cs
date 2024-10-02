@@ -1,18 +1,13 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
-
 
 public class EnemyShoot : MonoBehaviour
 {
+    private const float rate1 = .8f;
+    private const float rate2 = 3f;
 
     [SerializeField] private float FireRate;
     [SerializeField] public ShootSys shootsys;
     private float curtime;
-    private const float rate1 = .8f;
-    private const float rate2 = 3f;
 
 
     private void Start()
@@ -33,5 +28,4 @@ public class EnemyShoot : MonoBehaviour
             curtime -= Time.deltaTime;
         }
     }
-
 }

@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
@@ -13,14 +8,14 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float spawnInterval = 3.0f;
     [SerializeField] private int maxEnemies;
 
+    private float timer;
+
     private void Start()
     {
         maxEnemies = Random.Range(2, 7);
     }
 
-    private float timer;
-
-    void Update()
+    private void Update()
     {
         timer += Time.deltaTime;
         if (timer >= spawnInterval)

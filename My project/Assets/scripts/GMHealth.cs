@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
 
 public class GMHealth : MonoBehaviour
 {
@@ -24,8 +21,8 @@ public class GMHealth : MonoBehaviour
         UpdateScore();
     }
 
-    void UpdateScore()
+    private void UpdateScore()
     {
-        Dscore.text = ($"��� ���� {score.score}");
+        Dscore.text = $"��� ���� {score.score}";
     }
 }

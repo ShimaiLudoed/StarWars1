@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-
+using UnityEngine;
 
 public class Score : MonoBehaviour
 {
@@ -22,7 +18,4 @@ public class Score : MonoBehaviour
         score += 10;
         Tscore.text = "Score" + " " + score;
     }
-
-
-
 }

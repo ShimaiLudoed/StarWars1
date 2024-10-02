@@ -1,23 +1,19 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class AHealth : MonoBehaviour
 {
     [SerializeField] private int health;
     public int curHealth;
+    [SerializeField] protected PlayerHealth player;
     protected Score score;
-    [SerializeField]protected PlayerHealth player;
+
     private void Start()
     {
         curHealth = health;
-        if (gameObject.CompareTag("Enemy")) ;
+        if (gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
-             score = FindObjectOfType<Score>();
-             player = FindObjectOfType<PlayerHealth>();
+            score = FindObjectOfType<Score>();
+            player = FindObjectOfType<PlayerHealth>();
         }
     }
 
@@ -30,5 +26,4 @@ public abstract class AHealth : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
 }

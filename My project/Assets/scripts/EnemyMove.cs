@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
@@ -26,7 +24,7 @@ public class EnemyMove : MonoBehaviour
         }
     }
 
-    void Move()
+    private void Move()
     {
         Vector3 move = new Vector3(0, (float)-0.5, 0);
         transform.position += move * speed * MoveRate;
