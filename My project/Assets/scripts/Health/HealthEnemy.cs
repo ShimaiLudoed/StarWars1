@@ -1,6 +1,15 @@
+using UnityEngine;
+
 public class HealthEnemy : AHealth
 {
+    private PlayerHealth player;
 
+    private void Start()
+    {
+        curHealth = health;
+        score = FindObjectOfType<Score>();
+        player = FindAnyObjectByType<PlayerHealth>();
+    }
     private void Update()
     {
         if (curHealth <= 0)

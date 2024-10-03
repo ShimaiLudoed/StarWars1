@@ -4,6 +4,10 @@ public class PlayerHealth : AHealth
 {
     public event Action onPlayerDeath;
 
+    private void Start()
+    {
+        curHealth = health;
+    }
     public override void GetDamage(int damage)
     {
         base.GetDamage(damage);
