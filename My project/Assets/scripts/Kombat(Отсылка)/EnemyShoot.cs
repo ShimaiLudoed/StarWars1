@@ -1,18 +1,16 @@
 using UnityEngine;
 
-public class EnemyShoot : MonoBehaviour
+public class EnemyShoot : AShootSys
 {
-    private const float rate1 = .8f;
-    private const float rate2 = 3f;
-
+    private const float MinRate = .8f;
+    private const float Maxrate = 3f;
     [SerializeField] private float FireRate;
-    [SerializeField] public ShootSys shootsys;
     private float curtime;
 
 
     private void Start()
     {
-        FireRate = Random.Range(rate1, rate2);
+        FireRate = Random.Range(MinRate,Maxrate);
         curtime = FireRate;
     }
 
@@ -21,7 +19,7 @@ public class EnemyShoot : MonoBehaviour
         if (curtime <= 0)
         {
             curtime = FireRate;
-            shootsys.Shoot();
+            Shoot();
         }
         else
         {

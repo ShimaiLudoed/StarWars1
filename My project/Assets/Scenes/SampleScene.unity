@@ -2918,7 +2918,7 @@ PrefabInstance:
       objectReference: {fileID: 310013084}
     - target: {fileID: 5076472541414504611, guid: 43805096bf7ccad4eb0d75a1216f805b, type: 3}
       propertyPath: health
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5076472541414504611, guid: 43805096bf7ccad4eb0d75a1216f805b, type: 3}
       propertyPath: restart
@@ -2932,6 +2932,10 @@ PrefabInstance:
       propertyPath: DeathMenu
       value: 
       objectReference: {fileID: 1303645814}
+    - target: {fileID: 6737322312798397764, guid: 43805096bf7ccad4eb0d75a1216f805b, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

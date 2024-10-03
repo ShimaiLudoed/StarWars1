@@ -1,18 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootSys : MonoBehaviour
+public abstract class AShootSys : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPref;
     [SerializeField] private Transform FirePoint;
-
-    private void Update()
-    {
-        if (Input.GetButtonDown("Fire1") && gameObject.CompareTag("Player"))
-        {
-            Shoot();
-        }
-    }
-
+    
     public void Shoot()
     {
         GameObject bullet = Instantiate(bulletPref, FirePoint.position, FirePoint.rotation);

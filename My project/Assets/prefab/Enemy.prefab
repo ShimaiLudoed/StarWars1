@@ -135,7 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveRate: 2
   speed: 1
-  curRate: 0
 --- !u!114 &6620265244106729265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,8 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a65a6dc24ba0cc489ac752c3fe1fff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPref: {fileID: 7393589922344979969, guid: 4809cf88cd0badd49aa50dcb2897c047, type: 3}
+  FirePoint: {fileID: 2308450241854159242}
   FireRate: 0
-  shootsys: {fileID: 3090280834931021590}
 --- !u!114 &6496406635445308453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,8 +164,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   curHealth: 0
-  score: {fileID: 0}
-  player: {fileID: 5076472541414504611, guid: 43805096bf7ccad4eb0d75a1216f805b, type: 3}
 --- !u!68 &8795382096921798709
 EdgeCollider2D:
   m_ObjectHideFlags: 0

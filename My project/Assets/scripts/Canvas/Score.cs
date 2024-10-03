@@ -10,12 +10,12 @@ public class Score : MonoBehaviour
     private void Start()
     {
         score = 0;
-        Tscore.text = "Score" + " " + score;
+        Tscore.text = $"Scrote {score}";
     }
 
     public void AddScore()
     {
         score += 10;
-        Tscore.text = "Score" + " " + score;
+        Tscore.text = $"Scrote {score}";
     }
 }
